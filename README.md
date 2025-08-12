@@ -1,17 +1,14 @@
-# 🌐 HTML & CSS Proyektlar to'plami
+# 🌐 HTML & CSS Projects Collection
 
-Bu repozitoriyada men o'rgangan va yaratgan HTML va CSS asosidagi loyihalar jamlangan.
+This repository contains HTML and CSS-based projects that I have learned and created.
 
-## 📋 Loyiha ro‘yxati
+## 📋 Projects
 
-Quyida ba'zi muhim proyektlar ro'yxati:
-- [`01-art-design`](https://azykdeveloper.github.io/html-css-projects/01-art-design): Oddiy bir sahifa (landing page) loyihasi.  
+- [`01-art-design`](https://azykdeveloper.github.io/html-css-projects/01-art-design): A simple landing page project.  
 
 
-> **Eslatma**: Har bir loyiha papkasida kerakli fayllar mavjud va to‘g‘ridan-to‘g‘ri brauzerda ochish orqali ko‘rish mumkin.
-
-## 📂 Foydalanish tartibi
+> **Note**: Each project folder contains the necessary files and can be viewed by opening them directly in a browser..
 
 ```bash
-git clone https://github.com/azykdeveloper/html-css-projects.git
+git clone https://github.com/nayimov404/html-css-projects.git
 cd html-css-projects

@@ -5,7 +5,7 @@ This repository contains HTML and CSS-based projects that I have learned and cre
 ## 📋 Projects
 
 - [`01-art-design`](https://nayimov404.github.io/html-css-projects/01-art-design): A simple landing page project.  
-- [`01-namanganliklar24`](https://nayimov404.github.io/html-css-projects/01-namanganliklar24): News multi page project.  
+- [`02-namanganliklar24`](https://nayimov404.github.io/html-css-projects/02-namanganliklar24): News multi page project.  
 
 
 > **Note**: Each project folder contains the necessary files and can be viewed by opening them directly in a browser..

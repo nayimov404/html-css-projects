@@ -334,10 +334,11 @@ header .right button {
   background-color: var(--primary-light-coral);
   padding: 70px 0;
   position: relative;
+  overflow: hidden;
 }
 .cta img {
   position: absolute;
-  bottom: 0;
+  bottom: -35px;
   left: 0;
   width: 200px;
 }
@@ -356,17 +357,20 @@ footer {
 footer .wrapper {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
 footer .left {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  gap: 150px;
+}
+footer .left address {
+  color: #ffffff9d;
 }
 footer .left nav {
   display: flex;
   align-items: center;
   gap: 30px;
+  margin-top: 30px;
 }
 footer .left nav a {
   color: var(--primary-white);
@@ -375,9 +379,6 @@ footer .left nav a {
 }
 footer .left nav a:hover {
   color: var(--primary-light-coral);
-}
-footer .center {
-  color: var(--primary-white);
 }
 footer .right {
   display: flex;
@@ -398,7 +399,7 @@ footer .socials a:hover {
   color: var(--primary-light-coral);
 }
 footer .copyright {
-  color: var(--primary-white);
+  color: #ffffff9d;
   font-size: 14px;
 }
 
@@ -460,7 +461,8 @@ footer .copyright {
 .team .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  row-gap: 60px;
+  column-gap: 30px;
 }
 .team .team-grid .card {
   background-color: var(--secondary-sacramento-state-green);
@@ -669,6 +671,89 @@ textarea::placeholder {
   .features .left {
     width: 445px;
   }
+
+  /* TESTIMONIALS */
+  .testimonials {
+    padding: 100px 50px;
+  }
+  .testimonials h2 {
+    margin-bottom: 50px;
+  }
+  .testimonials .cards {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .testimonials .card {
+    width: 100%;
+  }
+
+  /* CTA - empty */
+
+  /* FOOTER */
+
+  footer .wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+  footer .right {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  /* --------------------- ABOUT --------------------- */
+  .about-hero {
+    padding: 80px 50px;
+    text-align: center;
+  }
+  .about-hero .wrapper {
+    flex-direction: column;
+  }
+  .about-hero p {
+    width: 450px;
+  }
+  .about-hero p::before {
+    display: none;
+  }
+
+  /* TEAM */
+  .team {
+    padding: 80px 50px;
+  }
+
+  /* CLIENTS */
+  .clients {
+    padding: 80px 50px;
+  }
+  .clients .clients-grid {
+    gap: 20px;
+  }
+  .clients .clients-grid img {
+    height: 20px;
+  }
+
+  /* ----------------------- CONTACT --------------------- */
+  /* CONTACT FORM */
+  .contact-form {
+    padding: 80px;
+  }
+  .contact-form > img {
+    top: 20px;
+  }
+  .contact-form .wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-form .about-us {
+    width: 100%;
+  }
+  .contact-form .about-us h3 {
+    width: 100%;
+  }
+  
+  .contact-form .contact-info {
+    width: 100%;
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -717,6 +802,73 @@ textarea::placeholder {
   .features .feature {
     flex-direction: column;
     text-align: center;
-    
   }
+
+  /* TESTIMONIALS */
+  .testimonials {
+    padding: 100px 20px;
+  }
+
+  /* CTA */
+  .cta .wrapper {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  /* FOOTER */
+
+  footer .left {
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  footer .left nav {
+    justify-content: center;
+    margin-top: 25px;
+  }
+  footer .right {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* --------------------- ABOUT --------------------- */
+  .about-hero {
+    padding: 80px 20px;
+  }
+  .about-hero p {
+    width: 100%;
+  }
+
+  /* TEAM */
+  .team {
+    padding: 80px 20px;
+  }
+
+  /* CLIENTS */
+  .clients {
+    padding: 80px 20px;
+    overflow: hidden;
+  }
+  .clients > img {
+    left: -50px;
+    top: -20px;
+    width: 150px;
+    height: auto;
+  }
+  .clients .clients-grid {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* ----------------------- CONTACT --------------------- */
+  /* CONTACT FORM */
+  .contact-form {
+    padding: 80px 30px;
+  }
+  
 }

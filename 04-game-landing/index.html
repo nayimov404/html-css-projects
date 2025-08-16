@@ -7,116 +7,314 @@
     <link rel="stylesheet" href="main.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css "
     />
   </head>
   <body>
     <!-- HEADER -->
     <header>
-      <div class="logo">
-        <img src="img/logo.png" alt="logo" />
-      </div>
+      <div class="container">
+        <div class="wrapper">
+          <div class="logo">
+            <img src="img/logo.png" alt="logo" />
+          </div>
 
-      <nav>
-        <a href="#main" class="navigation">main</a>
-        <a href="#about" class="navigation">about</a>
-        <a href="#features" class="navigation">game features</a>
-        <a href="#system" class="navigation"
-          >system requirements</a
-        >
-        <a href="#quotes" class="navigation">quotes</a>
-      </nav>
+          <nav>
+            <a href="#main" class="navigation">main</a>
+            <a href="#about" class="navigation">about</a>
+            <a href="#features" class="navigation">game features</a>
+            <a href="#system" class="navigation">system requirements</a>
+            <a href="#quotes" class="navigation">quotes</a>
+          </nav>
 
-      <div class="right">
-        <div class="lang">ENG <i class="fas fa-chevron-down"></i></div>
-        <img src="img/xbox.svg" alt="xbox" />
-        <img src="img/steam.svg" alt="steam" />
+          <div class="right">
+            <div class="lang">ENG <i class="mdi mdi-chevron-down"></i></div>
+            <img src="img/xbox.svg" alt="xbox" />
+            <img src="img/steam.svg" alt="steam" />
+          </div>
+        </div>
+        <div class="title">
+          <h1>SURVIVE AT ALL COSTS</h1>
+          <h3>Experience new social battle royale game</h3>
+          <button class="main-button">
+            Buy Now on Steam <span>$14.99</span>
+          </button>
+        </div>
       </div>
     </header>
 
-    <!-- MAIN -->
-    <main id="main">
-      <h1>SURVIVE AT ALL COSTS</h1>
-      <h3>Experience new social battle royale game</h3>
-      <button class="main-button">Buy Now on Steam <span>$14.99</span></button>
-    </main>
     <!-- ABOUT -->
-    <div id="about">
-      <div class="wrapper">
-        <div class="left">
-          <h3>What is SOS?</h3>
-          <h1>
-            social battle <br />
-            royale game
-          </h1>
+    <section id="about">
+      <div class="container">
+        <div class="wrapper">
+          <div class="left">
+            <h3>What is SOS?</h3>
+            <h1>
+              social battle <br />
+              royale game
+            </h1>
+
+            <div>
+              <div>
+                <p>
+                  Each round, <b>you</b> and <b>15</b> other contestants compete
+                  to escape a deadly island filled with monsters. The trick is:
+                  <b>three</b> people can survive. Will you run solo or form
+                  friendships with others to escape?
+                </p>
+                <p>
+                  Making the right decisions could be the difference between
+                  <span>life and death.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <img src="img/screenshot1.jpg" alt="screenshot1" height="540" />
+            <img src="img/screenshot2.jpg" alt="screenshot2" height="493" />
+            <img src="img/screenshot3.jpg" alt="screenshot3" height="441" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features">
+      <div class="container">
+        <div class="wrapper">
+          <h3>What’s so special?</h3>
+          <h1>features</h1>
 
           <div>
-            <div>
+            <h2>SURVIVE AT ALL COSTS</h2>
+            <p>
+              You have 30 minutes to find a relic, signal for extraction, and
+              grab one of three spots on the rescue chopper.
+            </p>
+          </div>
+          <div>
+            <h2>CREATE ALLIES AND ENEMIES</h2>
+            <!-- <p>
+              You have 30 minutes to find a relic, signal for extraction, and grab
+              one of three spots on the rescue chopper.
+            </p> -->
+          </div>
+          <div>
+            <h2>IMPRESS THE AUDIENCE</h2>
+            <!-- <p>
+              You have 30 minutes to find a relic, signal for extraction, and grab
+              one of three spots on the rescue chopper.
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SYSTEM REQUIREMENTS -->
+    <section id="system">
+      <div class="container">
+        <h3>Can My Computer Run this game?</h3>
+        <h1>system requirements</h1>
+
+        <div class="content">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <h3>OS:</h3>
+                  <p class="body">
+                    Windows 7 64-bit only (No OSX support at this time)
+                  </p>
+                </td>
+                <td>
+                  <h3>PROCESSOR:</h3>
+                  <p class="body">
+                    Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3>MEMORY:</h3>
+                  <p class="body">8 GB RAM</p>
+                </td>
+                <td>
+                  <h3>storage:</h3>
+                  <p class="body">8 GB available space</p>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <h3>GRAPHICS:</h3>
+                  <p class="body">
+                    NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB
+                    DirectX11 (Shader Model 5)
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- <div class="specs">
+            <div class="spec-item">
+              <h3>OS:</h3>
+              <p>Windows 7 64-bit only <br />(No OSX support at this time)</p>
+            </div>
+            <div class="spec-item">
+              <h3>Processor:</h3>
               <p>
-                Each round, <b>you</b> and <b>15</b> other contestants compete
-                to escape a deadly island filled with monsters. The trick is:
-                <b>three</b> people can survive. Will you run solo or form
-                friendships with others to escape?
+                Intel Core 2 Duo @ 2.4 GHZ or <br />
+                AMD Athlon X2 @ 2.8 GHZ
               </p>
+            </div>
+            <div class="spec-item">
+              <h3>Memory:</h3>
+              <p>8 GB RAM</p>
+            </div>
+            <div class="spec-item">
+              <h3>Storage:</h3>
+              <p>8 GB available space</p>
+            </div>
+            <div class="spec-item" style="grid-column: span 2">
+              <h3>Graphics:</h3>
               <p>
-                Making the right decisions could be the difference between
-                <span>life and death.</span>
+                NVIDIA GeForce GTX 660 2GB or <br />
+                AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
               </p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESS QUOTES -->
+    <section id="quotes">
+      <div class="container">
+        <div class="wrapper">
+          <div class="left">
+            <h3>What people think?</h3>
+            <h1>Press quotes</h1>
+            <p>
+              Our goal is to create a product and service that you’re satisfied
+              with and use it every day. This is why we’re constantly working on
+              our services to make it better every day and really listen to what
+              our users has to say.
+            </p>
+            <button class="main-button">read more testimonials</button>
+          </div>
+          <div class="right">
+            <div class="quote">
+              <div class="top">
+                <div class="avatar">
+                  <img src="img/person1.png" alt="person" />
+                </div>
+                <div>
+                  <h3>Evan Lahti</h3>
+                  <span>PC Gamer</span>
+                </div>
+                <i class="mdi mdi-twitter"></i>
+              </div>
+
+              <p class="body">“One of my gaming highlights of the year.”</p>
+              <span>October 18, 2018</span>
+            </div>
+            <div class="quote">
+              <div class="top">
+                <div class="avatar">
+                  <img src="img/person2.png" alt="person" />
+                </div>
+                <div>
+                  <h3>Jada Griffin</h3>
+                  <span>Nerdreactor </span>
+                </div>
+                <i class="mdi mdi-twitter"></i>
+              </div>
+
+              <p class="body">
+                “The next big thing in the world of streaming and survival
+                games.”
+              </p>
+              <span>December 21, 2018</span>
+            </div>
+            <div class="quote">
+              <div class="top">
+                <div class="avatar">
+                  <img src="img/person3.png" alt="person" />
+                </div>
+                <div>
+                  <h3>Aaron Williams</h3>
+                  <span>Uproxx</span>
+                </div>
+                <i class="mdi mdi-twitter"></i>
+              </div>
+
+              <p class="body">
+                “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is
+                Ridiculous.”
+              </p>
+              <span>December 24, 2018</span>
             </div>
           </div>
         </div>
-        <div class="right">
-          <img src="img/screenshot1.jpg" alt="screenshot1" height="540" />
-          <img src="img/screenshot2.jpg" alt="screenshot2" height="493" />
-          <img src="img/screenshot3.jpg" alt="screenshot3" height="441" />
-        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- FEATURES -->
-    <div id="features">
-      <div>
-        <h3>What’s so special?</h3>
-        <h1>features</h1>
-
-        <div>
-          <h2>SURVIVE AT ALL COSTS</h2>
-          <p>
-            You have 30 minutes to find a relic, signal for extraction, and grab
-            one of three spots on the rescue chopper.
-          </p>
-        </div>
-        <div>
-          <h2>CREATE ALLIES AND ENEMIES</h2>
-          <!-- <p>
-            You have 30 minutes to find a relic, signal for extraction, and grab
-            one of three spots on the rescue chopper.
-          </p> -->
-        </div>
-        <div>
-          <h2>IMPRESS THE AUDIENCE</h2>
-          <!-- <p>
-            You have 30 minutes to find a relic, signal for extraction, and grab
-            one of three spots on the rescue chopper.
-          </p> -->
-        </div>
-      </div>
-    </div>
-
-    <!-- SYSTEM REQUIREMENTS -->
-     <div id="system">
-      <h3>Can My Computer Run this game?</h3>
-      <h1>system requirements</h1>
-
-
-      <div class="content">
-        <div>
-          aaa
-        </div>
-      </div>
-     </div>
-    <!-- PRESS QUOTES -->
     <!-- SUBSCRIBE -->
-    <!-- FOOTER -->
+    <section id="subscribe">
+      <div class="container">
+        <div class="wrapper">
+          <div class="content">
+            <h3>Want to stay in touch?</h3>
+            <h1>newsletter SUBSCRIBE</h1>
+            <p class="body">
+              In order to start receiving our news, all you have to do is enter
+              your email address. Everything else will be taken care of by us.
+              We will send you emails containing information about game. We
+              don’t spam.
+            </p>
+
+            <form>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email adress"
+              />
+              <button class="main-button">Subscribe now</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+          <div class="top">
+            <div class="logo">
+              <img src="img/logo.png" alt="logo" width="60" />
+            </div>
+            <nav>
+              <a href="#main" class="navigation">main</a>
+              <a href="#about" class="navigation">about</a>
+              <a href="#features" class="navigation">game features</a>
+              <a href="#system" class="navigation">system requirements</a>
+              <a href="#quotes" class="navigation">quotes</a>
+            </nav>
+            <div class="social">
+              <i class="mdi mdi-facebook"></i>
+              <i class="mdi mdi-twitter"></i>
+              <i class="mdi mdi-youtube"></i>
+              <i class="mdi mdi-twitch"></i>
+            </div>
+          </div>
+          <div class="bottom">
+            <p class="copyright">
+              © 2018 Outpost Games, Inc. All Rights Reserved
+            </p>
+            <p class="links">
+              Privacy Policy | Terms of Services | Code of Conduct
+            </p>
+          </div>
+        </footer>
+      </div>
+    </section>
   </body>
 </html>

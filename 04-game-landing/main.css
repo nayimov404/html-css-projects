@@ -197,14 +197,17 @@ header button span {
   border-radius: 10px;
 }
 #about .right img:nth-child(1) {
+  height: 540px ;
   z-index: 3;
 }
 #about .right img:nth-child(2) {
+  height: 493px;
   z-index: 2;
   top: 23.5px;
   left: 100px;
 }
 #about .right img:nth-child(3) {
+  height: 441px;
   top: 49.5px;
   left: 140px;
 }
@@ -509,6 +512,19 @@ footer .bottom .links {
 
 /* PHONE SCREEN */
 @media (max-width: 768px) {
+  /* Typography */
+  h1 {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 22px;
+    font-weight: 600;
+  }
   /* HEADER */
   header nav {
     display: none;
@@ -528,24 +544,26 @@ footer .bottom .links {
     width: 100%;
   }
   #about .right img:nth-child(1) {
-    height: 373px;
+    height: 273px;
     top: 30px;
-    left: 80px;
+    left: 30px;
   }
   #about .right img:nth-child(2) {
-    height: 352px;
+    
+    height: 252px;
     top: 43.5px;
-    left: 150px;
+    left: 100px;
   }
   #about .right img:nth-child(3) {
-    height: 329px;
+    
+    height: 229px;
     top: 59.5px;
-    left: 180px;
+    left: 130px;
   }
 
   /* FEATURES */
   #features {
-    padding: 120px 0;
+    padding: 80px 0;
   }
   #features::before {
     background: radial-gradient(
@@ -556,7 +574,8 @@ footer .bottom .links {
       url("img/bg3.jpg") no-repeat center center/cover;
   }
   #features .wrapper {
-    width: 70%;
+    width: 100%;
+    padding-left: 50px;
   }
   #features > div div p {
     width: 100%;
@@ -567,7 +586,7 @@ footer .bottom .links {
 
   /* SYSTEM REQUIREMENTS */
   #system {
-    padding: 120px 0;
+    padding: 80px 0;
     color: #fff;
     background: radial-gradient(
         circle at 50%,
@@ -583,7 +602,6 @@ footer .bottom .links {
   #system .content table {
     width: 100%;
   }
-
 
   /* PRESS QUOTES */
   #quotes {
@@ -618,11 +636,10 @@ footer .bottom .links {
   #quotes .quote:last-child {
     transform: translateX(0);
   }
-  
 
   /* SUBSCRIBE */
   #subscribe {
-    padding: 120px 0 20px;
+    padding: 80px 0 20px;
   }
   #subscribe::before {
     background: radial-gradient(
@@ -638,12 +655,13 @@ footer .bottom .links {
   #subscribe .wrapper .content {
     width: 100%;
   }
-  #subscribe .wrapper .content h3, #subscribe .wrapper .content h1 {
-    padding-left: 120px;
+  #subscribe .wrapper .content h3,
+  #subscribe .wrapper .content h1 {
+    padding-left: 80px;
   }
   #subscribe .wrapper .content p {
     margin: 30px 0;
-    padding-left: 120px;
+    padding-left: 80px;
   }
   #subscribe .wrapper .content form {
     flex-direction: column;
@@ -668,15 +686,11 @@ footer .bottom .links {
   footer .top nav a {
     font-size: 16px;
   }
-  
   footer .top .social i {
     font-size: 30px;
   }
-
-
   footer .bottom {
     flex-direction: column;
     gap: 15px;
   }
-  
 }
